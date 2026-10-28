@@ -1,0 +1,64 @@
+Package: EasyCircR
+Title:  Detection and reconstruction of circular RNAs post-transcriptional regulatory interaction networks
+Version: 1.0
+Authors: Antonino Aparo, Simone Avesani, Luca Parmigiani, Sara Napoli, Francesco Bertoni, Vincenzo Bonnici, Luciano Cascione, Rosalba Giugno.
+Description:  EasyCircR is a novel R package that combines circRNA detection and reconstruction with posttranscriptional gene expression 
+            analysis (exon-intron split analysis) and miRNA response element prediction.
+            The package enables estimation and visualization of circRNA-miRNA-mRNA interactions through an intuitive
+            Shiny application, taking advantage of the post-transcriptional regulatory nature of circRNAs and excluding
+            unrealistic regulatory outcomes.
+License: MIT
+Encoding: UTF-8
+LazyData: false
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+biocViews:
+Imports:
+    dplyr,
+    GenomicFeatures,
+    eisaR,
+    parallel,
+    QuasR,
+    msigdbr,
+    tools,
+    magrittr,
+    edgeR,
+    limma,
+    R.utils,
+    bedr,
+    multiMiR,
+    msigdbr,
+    ggplot2,
+    Biobase,
+    igraph,
+    network,
+    shiny,
+    shinyjs,
+    shinyAce,
+    shinycssloaders,
+    shinydashboard,
+    shinyBS,
+    shinyalert,
+    rclipboard,
+    writexl,
+    plotly,
+    DT,
+    pdftools,
+    forcats,
+    circlize,
+    markdown,
+    scales,
+    gridExtra,
+    writexl,
+    pdftools,
+    ggrepel,
+    shinycssloaders,
+    shinydashboard,
+    ggnet,
+    Rbowtie,
+    Rhisat2
+Remotes: 
+  github::briatte/ggnet
