@@ -43,7 +43,7 @@ However, computational identification from RNA-seq data suffers from **striking 
 - **Quadruple Overlap:** Exactly **1 circRNA** (`chr10:133491216:133498010`) was captured across all four tools, representing the highest-confidence candidate in the dataset.
 - **Quantification Discordance:** Up to a **1,618-fold difference** in reported expression across tools, underscoring the critical need for multi-pipeline harmonization before biological interpretation.
 
-### 📈 Benchmark Visualizations
+### Benchmark Visualizations
 
 #### 1. Triple Overlap Analysis (108 Consensus circRNAs)
 <p align="center">
