@@ -5,7 +5,7 @@
 [![University of Verona](https://img.shields.io/badge/University-Verona-red.svg)](https://www.univr.it/)
 [![Lab](https://img.shields.io/badge/Lab-InfOmics-teal.svg)](https://github.com/InfOmics)
 
-> **Master's Degree in Medical Bioinformatics (Academic Year 2024–2025)**  
+> **Master's Degree in Medical Bioinformatics (Academic Year 2025–2026)**  
 > **Student:** Rida Hayat (Matricola: VR489060)  
 > **Supervisor:** Prof. Rosalba Giugno | **Tutor:** Simone Avesani  
 > *Department of Computer Science, Università degli Studi di Verona*
@@ -94,7 +94,7 @@ head(circ_df)
   author  = {Rida Hayat},
   title   = {Comparative Evaluation of Bioinformatics Pipelines for Circular RNA Detection and Reconstruction},
   school  = {Department of Computer Science, Universit{\`a} degli Studi di Verona},
-  year    = {2025},
+  year    = {2026},
   note    = {Supervised by Prof. Rosalba Giugno and Simone Avesani}
 }
 ```
