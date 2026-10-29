@@ -43,19 +43,43 @@ However, computational identification from RNA-seq data suffers from **striking 
 - **Quadruple Overlap:** Exactly **1 circRNA** (`chr10:133491216:133498010`) was captured across all four tools, representing the highest-confidence candidate in the dataset.
 - **Quantification Discordance:** Up to a **1,618-fold difference** in reported expression across tools, underscoring the critical need for multi-pipeline harmonization before biological interpretation.
 
+### 📈 Benchmark Visualizations
+
+#### Multi-Tool Detection Overlap & Consensus
+<p align="center">
+  <img src="EasyCircR-extended/img/Venn_3tools.png" width="48%" alt="Triple Overlap Venn Diagram (108 consensus circRNAs)" />
+  <img src="EasyCircR-extended/img/UpSet_4tools.png" width="48%" alt="4-Tool Intersection UpSet Plot" />
+</p>
+<p align="center">
+  <em><strong>Figure 1:</strong> Inter-pipeline detection overlap. (Left) 108 consensus circRNAs identified across CIRCexplorer2, CIRI-full, and CyCLeR. (Right) 4-way UpSet intersection revealing exactly 1 circRNA (<code>chr10:133491216:133498010</code>) shared across all four callers.</em>
+</p>
+
+#### Quantification Concordance & Discordance
+<p align="center">
+  <img src="EasyCircR-extended/img/correlation_combined_3tools.png" width="48%" alt="Pairwise Expression Correlation" />
+  <img src="EasyCircR-extended/img/Boxplot_global_TPM.png" width="48%" alt="Global circRNA Expression Across Tools (TPM)" />
+</p>
+<p align="center">
+  <em><strong>Figure 2:</strong> Quantitative evaluation. (Left) Pairwise expression correlations (log2(TPM+1)) showing strong correlation between CIRCexplorer2 and CIRI-full (r = 0.73, p = 2.58e-58) and divergence with CyCLeR. (Right) Global expression distributions highlighting severe caller-dependent quantification outliers.</em>
+</p>
+
 ---
 
 ## 🗂️ Repository Structure
 
 ```text
 CircRNA-pipelines-comparative-analysis/
-├── README.md                          # Repository documentation
-├── docs/                              # Thesis manuscript and defense slides
-├── figures/                           # Benchmark plots (Venn, UpSet, Correlations)
+├── README.md                          # Repository documentation & benchmarking summary
 └── EasyCircR-extended/                # Multi-pipeline extension module
-    ├── DESCRIPTION
-    ├── NAMESPACE
-    └── R/
+    ├── DESCRIPTION                    # R package metadata
+    ├── NAMESPACE                      # Exported functions and dependencies
+    ├── img/                           # Publication-ready benchmark figures
+    │   ├── Venn_3tools.png            # 3-way Venn diagram (108 consensus)
+    │   ├── UpSet_4tools.png           # 4-way UpSet intersection plot
+    │   ├── correlation_combined_3tools.png # Pairwise correlation scatter plots
+    │   ├── Boxplot_global_TPM.png     # Global TPM distribution
+    │   └── Spaghetti_triple_all.png   # Multi-tool expression discordance
+    └── R/                             # Automated wrappers & parsers
         ├── CIRCexplorer2.R            # CIRCexplorer2 execution driver
         ├── circexplorer2_output.R     # Standardized parser for CIRCexplorer2
         ├── circtools.R                # Flexbar + STAR + circtools driver
