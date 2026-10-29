@@ -85,12 +85,16 @@ However, computational identification from RNA-seq data suffers from **striking 
 ```text
 CircRNA-pipelines-comparative-analysis/
 ├── README.md                          # Repository documentation & benchmarking summary
+├── docs/                              # Defense presentation & documentation
+│   └── CircRNA_Benchmarking_Defense_Slides.pdf
 └── EasyCircR-extended/                # Multi-pipeline extension module
     ├── DESCRIPTION                    # R package metadata
     ├── NAMESPACE                      # Exported functions and dependencies
     ├── img/                           # Publication-ready benchmark figures
     │   ├── Venn_3tools.png            # 3-way Venn diagram (108 consensus)
+    │   ├── Venn_4tools.png            # 4-way Venn diagram (1 quadruple overlap)
     │   ├── UpSet_4tools.png           # 4-way UpSet intersection plot
+    │   ├── Spaghetti_quad_top10.png   # Quadruple overlap expression profile
     │   ├── correlation_combined_3tools.png # Pairwise correlation scatter plots
     │   ├── Boxplot_global_TPM.png     # Global TPM distribution
     │   └── Spaghetti_triple_all.png   # Multi-tool expression discordance
