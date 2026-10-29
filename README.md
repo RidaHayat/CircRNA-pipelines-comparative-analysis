@@ -45,22 +45,37 @@ However, computational identification from RNA-seq data suffers from **striking 
 
 ### 📈 Benchmark Visualizations
 
-#### Multi-Tool Detection Overlap & Consensus
+#### 1. Triple Overlap Analysis (108 Consensus circRNAs)
 <p align="center">
   <img src="EasyCircR-extended/img/Venn_3tools.png" width="48%" alt="Triple Overlap Venn Diagram (108 consensus circRNAs)" />
+  <img src="EasyCircR-extended/img/UpSet_3tools.png" width="48%" alt="Triple Overlap UpSet Plot" />
+</p>
+<p align="center">
+  <em><strong>Figure 1:</strong> Detection concordance across the three quantification-capable pipelines (CIRCexplorer2, CIRI-full, and CyCLeR). A robust core of <strong>108 circRNAs</strong> is co-detected by all three algorithms.</em>
+</p>
+
+#### 2. Quadruple Overlap Benchmark (Strict 4-Tool Consensus)
+<p align="center">
+  <img src="EasyCircR-extended/img/Venn_4tools.png" width="48%" alt="4-Tool Venn Diagram (Quadruple overlap = 1)" />
   <img src="EasyCircR-extended/img/UpSet_4tools.png" width="48%" alt="4-Tool Intersection UpSet Plot" />
 </p>
 <p align="center">
-  <em><strong>Figure 1:</strong> Inter-pipeline detection overlap. (Left) 108 consensus circRNAs identified across CIRCexplorer2, CIRI-full, and CyCLeR. (Right) 4-way UpSet intersection revealing exactly 1 circRNA (<code>chr10:133491216:133498010</code>) shared across all four callers.</em>
+  <img src="EasyCircR-extended/img/Spaghetti_quad_top10.png" width="70%" alt="Expression Trajectory of the Quadruple-Overlap circRNA" />
+</p>
+<p align="center">
+  <em><strong>Figure 2:</strong> 4-tool comparative results including circtools. (Top Left) 4-way Venn diagram demonstrating that only <strong>1 circRNA (<code>chr10:133491216:133498010</code>)</strong> passes detection thresholds across all four tools. (Top Right) UpSet plot of intersection sizes. (Bottom) Expression trajectory (log2(TPM+1)) for this highest-confidence candidate, revealing pronounced caller-dependent quantification variance (circtools reporting extreme high expression relative to CyCLeR).</em>
 </p>
 
-#### Quantification Concordance & Discordance
+#### 3. Expression Concordance, Correlations & Outliers
 <p align="center">
   <img src="EasyCircR-extended/img/correlation_combined_3tools.png" width="48%" alt="Pairwise Expression Correlation" />
   <img src="EasyCircR-extended/img/Boxplot_global_TPM.png" width="48%" alt="Global circRNA Expression Across Tools (TPM)" />
 </p>
 <p align="center">
-  <em><strong>Figure 2:</strong> Quantitative evaluation. (Left) Pairwise expression correlations (log2(TPM+1)) showing strong correlation between CIRCexplorer2 and CIRI-full (r = 0.73, p = 2.58e-58) and divergence with CyCLeR. (Right) Global expression distributions highlighting severe caller-dependent quantification outliers.</em>
+  <img src="EasyCircR-extended/img/Spaghetti_triple_all.png" width="70%" alt="Parallel coordinates expression plot of all 108 consensus circRNAs" />
+</p>
+<p align="center">
+  <em><strong>Figure 3:</strong> Quantitative evaluation across pipelines. (Top Left) Pairwise correlations (log2(TPM+1)) showing strong concordance between CIRCexplorer2 and CIRI-full (r = 0.73, p = 2.58e-58) but moderate concordance with CyCLeR (r = 0.30–0.39). (Top Right) Global TPM distribution highlighting extreme outlier levels in circtools. (Bottom) Parallel coordinates expression profiles across the 108 shared circRNAs, illustrating systematic cross-tool scale differences.</em>
 </p>
 
 ---
