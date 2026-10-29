@@ -12,7 +12,7 @@
 
 ---
 
-## 📌 Overview & Research Challenge
+## Overview & Research Challenge
 
 Circular RNAs (circRNAs) are covalently closed non-coding RNAs formed via non-canonical back-splicing. Because they lack 5' caps and 3' poly(A) tails, circRNAs are resistant to exonuclease degradation and exceptionally stable in bodily fluids, establishing them as key biomarkers and therapeutic candidates.
 
@@ -20,7 +20,7 @@ However, computational identification from RNA-seq data suffers from **striking 
 
 ---
 
-## 🎯 Key Contributions
+## Key Contributions
 
 1. **Systematic 4-Pipeline Benchmark:** A head-to-head evaluation of **CIRCexplorer2**, **CIRI-full**, **CyCLeR**, and **circtools** on high-throughput paired-end RNA-seq data from the **TMD8 diffuse large B-cell lymphoma (DLBCL)** cell line (`TMD8-8h-DMSO`).
 2. **Automated R Wrappers:** Developed end-to-end R automation scripts that streamline trimming (Flexbar), alignment (BWA-MEM, STAR), and caller execution.
@@ -29,7 +29,7 @@ However, computational identification from RNA-seq data suffers from **striking 
 
 ---
 
-## 📊 Summary of Benchmark Results
+## Summary of Benchmark Results
 
 | Pipeline | Detection Strategy | Detections (`TMD8-8h-DMSO`) | Median Expression (log2 TPM+1) | Methodological Strength |
 | :--- | :--- | :---: | :---: | :--- |
@@ -80,7 +80,7 @@ However, computational identification from RNA-seq data suffers from **striking 
 
 ---
 
-## 🗂️ Repository Structure
+## Repository Structure
 
 ```text
 CircRNA-pipelines-comparative-analysis/
@@ -109,7 +109,7 @@ CircRNA-pipelines-comparative-analysis/
 
 ---
 
-## 🚀 Quick Usage
+## Quick Usage
 
 ```R
 # Source the automated wrappers
