@@ -1,0 +1,10 @@
+# Vendor third-party Perl scripts and Java tools so they do not dominate stats
+EasyCircR-extended/exec/* linguist-vendored
+EasyCircR-extended/inst/java/* linguist-vendored
+*.pl linguist-vendored
+*.jar linguist-vendored
+
+# Ensure R and Bash are detected and highlighted
+*.R linguist-detectable=true
+*.sh linguist-detectable=true
+*.bash linguist-detectable=true
